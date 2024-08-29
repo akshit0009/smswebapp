@@ -16,10 +16,11 @@ pipeline {
             steps {
                 script {
                     // Restoring dependencies
-                    bat "${env.DOTNET_CLI_HOME}\\dotnet restore"
+                    //bat "cd ${DOTNET_CLI_HOME} && dotnet restore"
+                    bat "dotnet restore"
 
                     // Building the application
-                    bat "${env.DOTNET_CLI_HOME}\\dotnet build --configuration Release"
+                    bat "dotnet build --configuration Release"
                 }
             }
         }
@@ -28,7 +29,7 @@ pipeline {
             steps {
                 script {
                     // Running tests
-                    bat "${env.DOTNET_CLI_HOME}\\dotnet test --no-restore --configuration Release"
+                    bat "dotnet test --no-restore --configuration Release"
                 }
             }
         }
@@ -37,7 +38,7 @@ pipeline {
             steps {
                 script {
                     // Publishing the application
-                    bat "${env.DOTNET_CLI_HOME}\\dotnet publish --no-restore --configuration Release --output .\\publish"
+                    bat "dotnet publish --no-restore --configuration Release --output .\\publish"
                 }
             }
         }
@@ -46,9 +47,6 @@ pipeline {
     post {
         success {
             echo 'Build, test, and publish successful!'
-        }
-        failure {
-            echo 'Build, test, or publish failed.'
         }
     }
 }
