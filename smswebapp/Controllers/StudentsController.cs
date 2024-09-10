@@ -9,7 +9,8 @@ public class StudentsController : Controller{
         new Student {Id=2, Name="Ramesh", Address="Surat"},
         new Student {Id=3, Name="Akshit", Address="Hyd"},
         new Student {Id=4, Name="Padhu", Address="Hyd"},
-        new Student {Id=4, Name="Abhi", Address="Hyd"}
+        new Student {Id=4, Name="Abhi", Address="Hyd"},
+        new Student {Id=4, Name="Sai", Address="Hyd"}
     };
 
         public IActionResult Index()
