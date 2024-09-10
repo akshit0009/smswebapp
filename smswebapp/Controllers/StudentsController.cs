@@ -7,10 +7,8 @@ public class StudentsController : Controller{
     private static List<Student> students = new List<Student>{
         new Student {Id=1, Name="Dharmesh", Address="Delhi"},
         new Student {Id=2, Name="Ramesh", Address="Surat"},
-        new Student {Id=3, Name="Akshit", Address="Hyd"},
-        new Student {Id=4, Name="Abhi", Address="Hyd"},
-        new Student {Id=4, Name="Mani", Address="USA"},
-        new Student {Id=4, Name="Sai", Address="Hyd"}
+        new Student {Id=3, Name="Suresh", Address="Mumbai"},
+        new Student {Id=4, Name="Rakesh", Address="HYD"},
     };
 
         public IActionResult Index()
