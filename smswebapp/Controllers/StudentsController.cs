@@ -5,7 +5,8 @@ using smswebapp.Models;
 public class StudentsController : Controller{
 
    private static List<Student> students = new List<Student>{
-    new Student {Id=1, Name="Dharmesh", Address="Delhi"}
+    new Student {Id=1, Name="Dharmesh", Address="Delhi"},
+      new Student {Id=2, Name="Akshit", Address="HYD"}
 };
 
 
