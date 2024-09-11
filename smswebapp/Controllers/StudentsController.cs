@@ -8,8 +8,7 @@ public class StudentsController : Controller{
     new Student {Id=1, Name="Dharmesh", Address="Delhi"},
     new Student {Id=2, Name="Ramesh", Address="Surat"},
     new Student {Id=3, Name="Mani", Address="Banglore"},
-    new Student {Id=4, Name="shani", Address="UP"},
-    new Student {Id=5, Name="Raju", Address="MH"},
+    new Student {Id=4, Name="shani", Address="UP"}
 };
 
 
