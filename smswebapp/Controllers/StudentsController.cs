@@ -10,6 +10,7 @@ public class StudentsController : Controller{
     new Student {Id=3, Name="Mani", Address="Banglore"},
     new Student {Id=4, Name="SHAM", Address="HYD"},
     new Student {Id=5, Name="Toni", Address="Goa"}, 
+    new Student {Id=6, Name="sony", Address="punjab"}  
 };
 
 
