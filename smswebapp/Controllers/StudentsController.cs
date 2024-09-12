@@ -6,7 +6,8 @@ public class StudentsController : Controller{
 
    private static List<Student> students = new List<Student>{
     new Student {Id=1, Name="Dharmesh", Address="Delhi"},
-      new Student {Id=2, Name="Akshit", Address="HYD"}
+      new Student {Id=2, Name="Ramesh", Address="Mumbai"},
+      new Student {Id=3, Name="Akshit", Address="HYD"}
 };
 
 
